@@ -1,0 +1,25 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+.example-card {
+    max-width: 465px;
+    margin-bottom: 8px;
+    margin-top: 2rem;
+}
+
+.temp {
+    font-size: 200%;
+    font-weight: 500;
+}
+
+.center {
+    margin-left: 30%;
+    margin-top: 5%;
+}

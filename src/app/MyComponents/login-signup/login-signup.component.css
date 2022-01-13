@@ -1,5 +1,6 @@
 .example-card {
     max-width: 400px;
+    max-height: 80%;
 }
 
 .example-header-image {
@@ -9,6 +10,7 @@
 
 .center-content {
     text-align: -webkit-center;
+    margin-top: 5rem;
 }
 
 .mat-tab-group {
