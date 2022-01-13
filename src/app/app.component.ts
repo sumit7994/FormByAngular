@@ -12,7 +12,6 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    console.log("hello");
     // this.router.navigate(['login-signup'])
   }
 

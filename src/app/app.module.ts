@@ -14,6 +14,11 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { HomePageComponent } from './MyComponents/home-page/home-page.component';
 import { LoginSignupComponent } from './MyComponents/login-signup/login-signup.component';
 import { TermsconditionsComponent } from './MyComponents/termsconditions/termsconditions.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './MyComponents/navbar/navbar.component';
+import { WeatherDisplayComponent } from './MyComponents/weather-display/weather-display.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 
 
@@ -23,7 +28,9 @@ import { TermsconditionsComponent } from './MyComponents/termsconditions/termsco
     AppComponent,
     HomePageComponent,
     LoginSignupComponent,
-    TermsconditionsComponent
+    TermsconditionsComponent,
+    NavbarComponent,
+    WeatherDisplayComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +43,9 @@ import { TermsconditionsComponent } from './MyComponents/termsconditions/termsco
     FormsModule,
     MatIconModule,
     MatCheckboxModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

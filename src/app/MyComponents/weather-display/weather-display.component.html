@@ -1,0 +1,28 @@
+<a routerLink="/login-signup" style="display: flex; float: right; margin-right: 10px;">Go Back</a>
+
+<h1 style="text-align: center; margin-top: 2rem; font-weight: 500;">See your
+    Weather here</h1>
+
+<div class="center">
+    <form class="example-form">
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>City</mat-label>
+            <input type="text" matInput placeholder="Delhi" required [(ngModel)]="weatherData.city" name="city">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button class="button-length" color="accent" name="city" (click)="weatherData.weatherInfo()">Check
+        Weather</button>
+
+    <mat-card class="example-card">
+        <mat-card-title-group>
+            <mat-card-title>{{weatherData.cityName}}</mat-card-title>
+            <mat-card-subtitle>{{weatherData.country}}</mat-card-subtitle>
+            <p class="temp">{{weatherData.temprature}}</p>
+        </mat-card-title-group>
+        <mat-card-content>
+            <p>{{weatherData.weather}}</p>
+            <p>{{weatherData.humidity}}</p>
+            <p>{{weatherData.feelsLike}}</p>
+        </mat-card-content>
+    </mat-card>
+</div>

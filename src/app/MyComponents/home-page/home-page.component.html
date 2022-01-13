@@ -1,3 +1,6 @@
+<!-- <app-navbar></app-navbar>
+<app-weather-display [weatherData]="weatherData"></app-weather-display> -->
+
 <a routerLink="/login-signup" style="display: flex; float: right; margin-right: 10px;">Go Back</a>
 
 <h1 style="text-align: center; margin-top: 2rem; font-weight: 500;">See your
@@ -7,7 +10,8 @@
     <form class="example-form">
         <mat-form-field class="example-full-width" appearance="fill">
             <mat-label>City</mat-label>
-            <input type="text" matInput placeholder="Delhi" required [(ngModel)]="city" name="city">
+            <input (keypress)='keyPress($event)' type="text" matInput placeholder="Delhi" required [(ngModel)]="city"
+                name="city">
         </mat-form-field>
     </form>
     <button mat-raised-button class="button-length" color="accent" name="city" (click)="weatherInfo()">Check
